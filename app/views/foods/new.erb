@@ -1,0 +1,9 @@
+<div>
+    <h2>New Food</h2>
+
+    <%= form_for @food do |f| %>
+    <%= f.label :name %>
+        <%= f.text_field :name %>
+    <%= f.submit %>
+    <% end %>
+</div>

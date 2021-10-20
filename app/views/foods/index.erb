@@ -1,0 +1,21 @@
+<div>
+    <h2>All Foods</h2>
+    <a href="/foods/new">Add Food</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @foods.each do |f|%>
+                <tr>
+                    <td><%= f.name %></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+
+</div>
