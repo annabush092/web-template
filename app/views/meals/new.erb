@@ -1,0 +1,37 @@
+<div>
+    <h2>Log A Meal</h2>
+
+    <%= form_tag({:controller => "meals", :action => "create"}, :method => "post") do %>
+        <%= label_tag :food1 %>
+        <%= select_tag :food1, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %>
+
+        <%= label_tag :food2 %>
+        <%= select_tag :food2, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %>  
+
+        <%= label_tag :food3 %>
+        <%= select_tag :food3, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %>  
+
+        <%= label_tag :food4 %>
+        <%= select_tag :food4, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %> 
+            
+        <%= label_tag :food5 %>
+        <%= select_tag :food5, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %> 
+            
+        <%= label_tag :food6 %>
+        <%= select_tag :food6, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %> 
+
+        <%= label_tag :food7 %>
+        <%= select_tag :food7, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %> 
+
+        <%= label_tag :food8 %>
+        <%= select_tag :food8, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %> 
+
+        <%= label_tag :food9 %>
+        <%= select_tag :food9, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %> 
+
+        <%= label_tag :food10 %>
+        <%= select_tag :food10, options_for_select(@allFoods.collect{ |u| [u.name, u.id] }) %> 
+
+        <%= submit_tag %>
+    <% end %>
+</div>

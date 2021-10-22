@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'foods#index'
 
   resources :foods, only: [:index, :new, :create]
+  resources :meals, only: [:index, :new, :create, :edit, :update]
 end

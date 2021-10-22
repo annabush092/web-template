@@ -1,0 +1,23 @@
+<div>
+    <h2>All Meals</h2>
+    <a href="/meals/new">Log A Meal</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Food</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @meals.each do |m|%>
+                <tr>
+                    <td><%= m.created_at %></td>
+                    <td><%= m.food.name %></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+
+</div>
